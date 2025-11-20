@@ -2,7 +2,7 @@ package empresa;
 
 import java.util.Scanner;
 
-public class Atividades {
+public class CalculoImc {
 
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
