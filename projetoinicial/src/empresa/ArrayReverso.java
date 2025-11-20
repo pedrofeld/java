@@ -7,7 +7,10 @@ import java.util.Scanner;
 public class ArrayReverso {
 
 	public static void main(String[] args) {
+		// ARRAY DE NÚMEROS ----------------------------------------------
 		int dados[] = {10, 20, 30, 40, 50};
+		
+		System.out.println("Array de números: ");
 		 
 		// Solução 1 para exibir todos os dados: 
 		//System.out.println(dados[0]);
@@ -32,10 +35,26 @@ public class ArrayReverso {
 		//     System.out.println(dado);
 		// }
 		
-		//É possível substituir dados[] por ArrayList:
-		//ArrayLis<classe> nomeDoArray = new ArrayList<classe>();
-		//ArrayList<Integer> novosDados = new ArrayList<Integer>();
+		// É possível substituir dados[] por ArrayList:
+		// ArrayLis<classe> nomeDoArray = new ArrayList<classe>();
+		// ArrayList<Integer> novosDados = new ArrayList<Integer>();
 		
+		// Convertendo array primitivo para ArrayList
+        ArrayList<Integer> dadosLista = new ArrayList<Integer>();
+        for (int numero : dados) {
+            dadosLista.add(numero);
+        }
+        
+        System.out.println("Ordem normal: " + dadosLista);
+        
+        // Invertendo com Collections
+        Collections.reverse(dadosLista);
+        System.out.println("Ordem reversa: " + dadosLista);
+        
+        // ARRAY DE STRINGS ----------------------------------------------
+		
+        System.out.println("Array de strings: ");
+        
 		Scanner teclado = new Scanner(System.in);
 		
 		ArrayList<String> listaNomes = new ArrayList<String>();
